@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+        <title>Personal Website</title>
+        <link rel="stylesheet" href="gallerystyle.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>               
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>     
+                    <div class="full-gallery" id="fullgalleryBox">
+                        <img src="images\pic1 (2).JPG" id="fullgallery">
+                        <span onclick="closefullgallery()">x</span>
+                    </div>
+                    <div id="gallery">         
+                        <div class="pic">
+                            <img src="images\pic1 (2).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (3).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (4).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (5).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (6).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (7).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (8).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (9).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (10).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic.JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (11).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (12).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (13).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (15).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (16).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (17).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (18).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (19).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (20).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (22).JPG" onclick="openfullgallery(this.src)">
+                            <img src="images\pic1 (23).JPG" onclick="openfullgallery(this.src)">
+                        </div>
+                </div>
+            </div>
+            <script>
+
+                var fullgalleryBox = document.getElementById("fullgalleryBox");
+                var fullgallery = document.getElementById("fullgallery")
+
+                function openfullgallery(pic){;
+                fullgalleryBox.style.display = "flex";
+                fullgallery.src = pic;
+            
+                }
+
+                function closefullgallery(){;
+                fullgalleryBox.style.display = "none";
+                }
+
+            </script>
+            </body>
+        </html>
